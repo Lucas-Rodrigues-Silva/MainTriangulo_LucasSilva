@@ -1,0 +1,50 @@
+package triangulo_lucasrodriguessilva;
+import java.util.Scanner;
+/**
+ *
+ * @author Lucas Rodrigues Silva
+ */
+public class Triangulo_LucasRodriguesSilva {
+
+    public static void main(String[] args) {   
+  
+      
+            double A, B, C;
+            Scanner entrada = new Scanner(System.in);
+            
+            System.out.print("Digite o tamanho do 1º lado: ");
+            
+            A = entrada.nextDouble();
+            
+            System.out.print("Digite o tamanho do 2º lado: ");
+            
+            B = entrada.nextDouble();
+            
+            System.out.print("Digite o tamanho do 3º lado: ");
+            
+            C = entrada.nextDouble();
+
+            if((A + B > C) && (A + C > B) && (B + C > A))
+            {
+                if ((A == B) && (A == C) && (B == C))
+                {
+                        System.out.println("É um Triângulo Equilátero!");
+                }
+                else if ((A != B) && (A != C) && (B != C))
+                    {
+                        System.out.println("É um Triângulo Escaleno!");
+                    }
+                else if ((A == B) && (A != C) || (A == C) && (A != B) || (B == C) && (B != A))
+                    {
+                        System.out.println("É um Triângulo Iscóceles!");
+                    }
+                else
+                    {  }
+            }
+            else
+            {
+                    System.out.println("NÃO é um Triângulo!");
+            }
+    }
+    
+}
