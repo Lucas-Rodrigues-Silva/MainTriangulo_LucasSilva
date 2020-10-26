@@ -1,13 +1,11 @@
 package triangulo_lucasrodriguessilva;
 import java.util.Scanner;
 /**
- *
  * @author Lucas Rodrigues Silva
  */
 public class Triangulo_LucasRodriguesSilva {
 
-    public static void main(String[] args) {   
-  
+    public static void main(String[] args) {     
       
             double A, B, C;
             Scanner entrada = new Scanner(System.in);
